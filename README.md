@@ -1,3 +1,7 @@
 # CHSscreeps
-  
+
   Screeps code goes here
+
+# Credits:
+  (add your name once you have it cloned to the desktop)
+- Aidan Wilson
