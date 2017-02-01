@@ -1,4 +1,4 @@
-# CHSscreeps
+# CHS Screeps
 
   Screeps code goes here
 
