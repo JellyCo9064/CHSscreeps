@@ -24,3 +24,4 @@ function loop (){
         }
     }
 };
+module.export.loop = loop;
