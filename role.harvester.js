@@ -1,4 +1,4 @@
-module.exports = {
+var roleHarvester = {
 	name: 'harvester',
 	priority:1, 
 	max:2,
@@ -44,3 +44,4 @@ module.exports = {
 		}
 	}
 };
+module.exports = roleHarvester;
