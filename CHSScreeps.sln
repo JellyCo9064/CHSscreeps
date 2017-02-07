@@ -31,6 +31,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ScreepsAutocomplete", "..\S
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "5946"
+		SlnRelativePath = "..\ScreepsAutocomplete\"
 	EndProjectSection
 EndProject
 Global
