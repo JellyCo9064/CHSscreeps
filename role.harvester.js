@@ -5,6 +5,6 @@ module.exports = {
 	min:1,
 	parts: ['WORK', 'MOVE', 'CARRY'],
 	loop: function(creep){
-
+        
 	}
 };
