@@ -7,7 +7,7 @@ module.exports.spawnLoop = function(roomnum){
 	for(let i = 0; i< Memory.rolesPrior;i++){
 		if(counts[Memory.rolesPrior[i]] < Memory.roles[Memory.rolesPrior[i]].min){
 			if(releSpawn.canCreateCreep(Memory.roles[Memory.rolesPrior[i]].parts)){
-				releSpawn.createCreep(Memory.roles[Memory.rolesPrior[i]].parts,Memory.rolesPrior[i]+(counts[Memory.creeps[name].role]+1, {role:Memory.rolesPrior[i]}));
+				releSpawn.createCreep(Memory.roles[Memory.rolesPrior[i]].parts,Memory.rolesPrior[i]+(counts[Memory.creeps[name].role] + 1), {role:Memory.rolesPrior[i]});
 				console.log('made a creep');
 				counts[Memory.rolesPrior[i]]++;
 				return true;
@@ -20,8 +20,8 @@ module.exports.spawnLoop = function(roomnum){
 	for(let i = 0; i< Memory.rolesPrior;i++){
 		if(counts[Memory.rolesPrior[i]] < Memory.roles[Memory.rolesPrior[i]].max){
 			if(releSpawn.canCreateCreep(Memory.roles[Memory.rolesPrior[i]].parts)){
-				releSpawn.createCreep(Memory.roles[Memory.rolesPrior[i]].parts,Memory.rolesPrior[i]+(counts[Memory.creeps[name].role]+1, {role:Memory.rolesPrior[i]}));
-				console.log('made an extra creep');\
+				releSpawn.createCreep(Memory.roles[Memory.rolesPrior[i]].parts,Memory.rolesPrior[i]+(counts[Memory.creeps[name].role] + 1), {role:Memory.rolesPrior[i]});
+				console.log('made an extra creep');
 				counts[Memory.rolesPrior[i]]++;
 				return true;
 			} else {
