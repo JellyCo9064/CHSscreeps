@@ -1,5 +1,6 @@
 //Main File--where we'll outsource everything.
 var config = require('config');
+var spawn = require('spawn');
 function initRoles(names){
 	var roles = {};
 	var rolesPrior = [];
@@ -10,11 +11,16 @@ function initRoles(names){
 	}
 	return [roles, rolesPrior];
 }
+var controlledRooms = [];
+function initRooms (){
+	
+}
 var roleArr = initRoles(config.roles);
 var roles = roleArr[0];
 var rolesPrior = roleArr[1];
 Memory.roles = roles;
 Memory.rolesPrior = rolesPrior;
+Memory.config = config;
 function loop (){
 	this.config = config;
 	for (let name in Memory.creeps)
@@ -23,5 +29,6 @@ function loop (){
             delete Memory.creeps[name];
         }
     }
+    spawn.spawnLoop(1);
 };
 module.export.loop = loop;
